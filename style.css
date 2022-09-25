@@ -184,7 +184,7 @@ main section h2{
 }
 
 #nadpis::before {
-    content: "{Chceš se naučit programovat? Tak tady jsi správně!};";
+    content: "{Chceš vytvořit web? Tak tady jsi správně!};";
     animation: animate 6s;
     padding-left: 10px;
 }
@@ -207,129 +207,93 @@ main section h2{
         content: "{Chceš|";
     }
     10% {
-        content: "{Chceš s|";
+        content: "{Chceš v|";
     }
     12% {
-        content: "{Chceš se|";
+        content: "{Chceš vy|";
     }
     14% {
-        content: "{Chceš se n|";
+        content: "{Chceš vyt|";
     }
     16% {
-        content: "{Chceš se na|";
+        content: "{Chceš vytv|";
     }
     18% {
-        content: "{Chceš se nau|";
+        content: "{Chceš vytvoř|";
     }
     20% {
-        content: "{Chceš se nauč|";
+        content: "{Chceš vytvořit|";
     }
     22% {
-        content: "{Chceš se nauči|";
+        content: "{Chceš vytvořit |";
     }
     24% {
-        content: "{Chceš se naučit|";
+        content: "{Chceš vytvořit w|";
     }
     26% {
-        content: "{Chceš se naučit |";
-    }
-    28% {
-        content: "{Chceš se naučit p|";
+        content: "{Chceš vytvořit we|";
     }
     30% {
-        content: "{Chceš se naučit pr|";
+        content: "{Chceš vytvořit web|";
     }
-    32% {
-        content: "{Chceš se naučit pro|";
+    35% {
+        content: "{Chceš vytvořit web?|";
     }
-    34% {
-        content: "{Chceš se naučit prog|";
+    41% {
+        content: "{Chceš vytvořit web? T|";
     }
-    36% {
-        content: "{Chceš se naučit progr|";
+    45% {
+        content: "{Chceš vytvořit web? Tak|";
     }
-    38% {
-        content: "{Chceš se naučit progra|";
-    }
-    40% {
-        content: "{Chceš se naučit program|";
-    }
-    42% {
-        content: "{Chceš se naučit programo|";
-    }
-    44% {
-        content: "{Chceš se naučit programov|";
-    }
-    46% {
-        content: "{Chceš se naučit programova|";
-    }
-    48% {
-        content: "{Chceš se naučit programovat|";
-    }
-
     50% {
-        content: "{Chceš se naučit programovat?|";
+        content: "{Chceš vytvořit web? Tak t|";
     }
-
-    52% {
-        content: "{Chceš se naučit programovat?|";
-    }
-    54% {
-        content: "{Chceš se naučit programovat? T|";
-    }
-    56% {
-        content: "{Chceš se naučit programovat? Ta|";
+    55% {
+        content: "{Chceš vytvořit web? Tak ta|";
     }
     58% {
-        content: "{Chceš se naučit programovat? Tak|";
+        content: "{Chceš vytvořit web? Tak tad|";
     }
-    60% {
-        content: "{Chceš se naučit programovat? Tak t|";
-    }
-    62% {
-        content: "{Chceš se naučit programovat? Tak ta|";
+    61% {
+        content: "{Chceš vytvořit web? Tak tady|";
     }
     64% {
-        content: "{Chceš se naučit programovat? Tak tad|";
-    }
-    66% {
-        content: "{Chceš se naučit programovat? Tak tady|";
+        content: "{Chceš vytvořit web? Tak tady j|";
     }
     68% {
-        content: "{Chceš se naučit programovat? Tak tady j|";
+        content: "{Chceš vytvořit web? Tak tady js|";
     }
-    70% {
-        content: "{Chceš se naučit programovat? Tak tady js|";
+    71% {
+        content: "{Chceš vytvořit web? Tak tady jsi|";
     }
-    72% {
-        content: "{Chceš se naučit programovat? Tak tady jsi|";
-    }
+
     74% {
-        content: "{Chceš se naučit programovat? Tak tady jsi s|";
+        content: "{Chceš vytvořit web? Tak tady jsi s|";
     }
-    76% {
-        content: "{Chceš se naučit programovat? Tak tady jsi sp|";
-    }
+
     78% {
-        content: "{Chceš se naučit programovat? Tak tady jsi spr|";
+        content: "{Chceš vytvořit web? Tak tady jsi sp|";
     }
-    80% {
-        content: "{Chceš se naučit programovat? Tak tady jsi sprá|";
-    }
-    82% {
-        content: "{Chceš se naučit programovat? Tak tady jsi správ|";
+    81% {
+        content: "{Chceš vytvořit web? Tak tady jsi spr|";
     }
     84% {
-        content: "{Chceš se naučit programovat? Tak tady jsi správn|";
-    }
-    86% {
-        content: "{Chceš se naučit programovat? Tak tady jsi správně!|";
+        content: "{Chceš vytvořit web? Tak tady jsi sprá|";
     }
     88% {
-        content: "{Chceš se naučit programovat? Tak tady jsi správně!}|";
+        content: "{Chceš vytvořit web? Tak tady jsi správ|";
     }
-    86% {
-        content: "{Chceš se naučit programovat? Tak tady jsi správně!};|";
+    91% {
+        content: "{Chceš vytvořit web? Tak tady jsi správn|";
+    }
+    94% {
+        content: "{Chceš vytvořit web? Tak tady jsi správně|";
+    }
+    97% {
+        content: "{Chceš vytvořit web? Tak tady jsi správně!|";
+    }
+    100% {
+        content: "{Chceš vytvořit web? Tak tady jsi správně!}";
     }
 }
 
