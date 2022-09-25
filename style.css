@@ -1,0 +1,796 @@
+body{
+    font-family: "Century Gothic","Arial";
+    color: white;
+    margin: 0;
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 1000px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+header{
+    padding-bottom: 5%;
+    color: white;
+}
+nav{
+    text-align: right;
+}
+nav a{
+    font-size: 2vh;
+    text-decoration: none;
+    padding: 0% 3% 0% 0%;
+    color: white;
+}
+nav a:hover{
+    color: #87CEFA;
+}
+#logo h1{
+    padding: 0;
+    margin: 0;
+    font-size: 4vh;
+}
+#logo p{
+    font-size: 1.5vh;
+    margin: -1% 0% 0% 13%;
+}
+#header1 h1{
+    font-size: 10vh;
+    color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#header1{
+    padding: 15% 0 15% 0;
+    text-align: center;
+    transition: 1s;
+}
+
+header button{
+    padding: 1% 2% 1% 2%;
+    border: 1px #87CEFA;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e,#ee7752);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+    transition: 0.5s
+}
+
+header button:hover{
+    padding: 1.3% 2.3% 1.3% 2.3%;
+    border: 1px #87CEFA;
+    border-radius: 10px;
+    text-align: center;
+    color: #87CEFA;
+    cursor: pointer;
+}
+#header2{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+
+#logo{
+    padding: 1% 2% 1% 10%;
+    margin: 0;
+}
+
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+
+#header2 nav{
+    padding: 3% 2% 2% 2%;
+}
+
+main section{
+    z-index: 99;
+    text-align: center;
+}
+
+main section h2{
+    margin: 0 5% 0 0;
+    padding: 3% 0% 2% 0%;
+    font-size: 25vh;
+    text-align: right;
+    color: rgba(255,255,255,0.1);
+}
+
+#textonas{
+    margin: 3% 20% 0% 20%;
+    font-size: 2.2vh;
+    padding-bottom: 5%;
+}
+#aboutus h1{
+    margin: -10% 0 0 0;
+    font-size: 10vh;
+}
+
+#martintext,#marcotext{
+    padding: 5%;
+    font-size: 2vh;
+}
+
+#my{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+}
+
+#my div img{
+    padding: 1% 3% 1% 3%;
+}
+
+#mydiv, #mydiv2{
+    color: white;
+    border-radius: 30px;
+    margin: 2% 20% 2% 20%;
+    transition: 2s;
+    background-color: rgba(255,255,255,0.2);
+}
+
+#marco,#martin{
+    width: 50%;
+    margin-top: -15%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 25% 75%;
+    }
+    50% {
+        background-position: 75% 50%;
+    }
+    100% {
+        background-position: 25% 75%;
+    }
+}
+
+@keyframes bigger {
+    0% {
+        padding: 1% 2% 1% 2%;;
+    }
+    100% {
+        padding: 2% 3% 2% 3%;;
+    }
+}
+
+.curvedbck {
+    z-index: 80;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    clip-path: ellipse(75% 100% at 62% 100%);
+}
+
+#nadpis::before {
+    content: "{Chceš se naučit programovat? Tak tady jsi správně!};";
+    animation: animate 6s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "{C|";
+    }
+    2% {
+        content: "{Ch|";
+    }
+    4% {
+        content: "{Chc|";
+    }
+    6% {
+        content: "{Chce|";
+    }
+    8% {
+        content: "{Chceš|";
+    }
+    10% {
+        content: "{Chceš s|";
+    }
+    12% {
+        content: "{Chceš se|";
+    }
+    14% {
+        content: "{Chceš se n|";
+    }
+    16% {
+        content: "{Chceš se na|";
+    }
+    18% {
+        content: "{Chceš se nau|";
+    }
+    20% {
+        content: "{Chceš se nauč|";
+    }
+    22% {
+        content: "{Chceš se nauči|";
+    }
+    24% {
+        content: "{Chceš se naučit|";
+    }
+    26% {
+        content: "{Chceš se naučit |";
+    }
+    28% {
+        content: "{Chceš se naučit p|";
+    }
+    30% {
+        content: "{Chceš se naučit pr|";
+    }
+    32% {
+        content: "{Chceš se naučit pro|";
+    }
+    34% {
+        content: "{Chceš se naučit prog|";
+    }
+    36% {
+        content: "{Chceš se naučit progr|";
+    }
+    38% {
+        content: "{Chceš se naučit progra|";
+    }
+    40% {
+        content: "{Chceš se naučit program|";
+    }
+    42% {
+        content: "{Chceš se naučit programo|";
+    }
+    44% {
+        content: "{Chceš se naučit programov|";
+    }
+    46% {
+        content: "{Chceš se naučit programova|";
+    }
+    48% {
+        content: "{Chceš se naučit programovat|";
+    }
+
+    50% {
+        content: "{Chceš se naučit programovat?|";
+    }
+
+    52% {
+        content: "{Chceš se naučit programovat?|";
+    }
+    54% {
+        content: "{Chceš se naučit programovat? T|";
+    }
+    56% {
+        content: "{Chceš se naučit programovat? Ta|";
+    }
+    58% {
+        content: "{Chceš se naučit programovat? Tak|";
+    }
+    60% {
+        content: "{Chceš se naučit programovat? Tak t|";
+    }
+    62% {
+        content: "{Chceš se naučit programovat? Tak ta|";
+    }
+    64% {
+        content: "{Chceš se naučit programovat? Tak tad|";
+    }
+    66% {
+        content: "{Chceš se naučit programovat? Tak tady|";
+    }
+    68% {
+        content: "{Chceš se naučit programovat? Tak tady j|";
+    }
+    70% {
+        content: "{Chceš se naučit programovat? Tak tady js|";
+    }
+    72% {
+        content: "{Chceš se naučit programovat? Tak tady jsi|";
+    }
+    74% {
+        content: "{Chceš se naučit programovat? Tak tady jsi s|";
+    }
+    76% {
+        content: "{Chceš se naučit programovat? Tak tady jsi sp|";
+    }
+    78% {
+        content: "{Chceš se naučit programovat? Tak tady jsi spr|";
+    }
+    80% {
+        content: "{Chceš se naučit programovat? Tak tady jsi sprá|";
+    }
+    82% {
+        content: "{Chceš se naučit programovat? Tak tady jsi správ|";
+    }
+    84% {
+        content: "{Chceš se naučit programovat? Tak tady jsi správn|";
+    }
+    86% {
+        content: "{Chceš se naučit programovat? Tak tady jsi správně!|";
+    }
+    88% {
+        content: "{Chceš se naučit programovat? Tak tady jsi správně!}|";
+    }
+    86% {
+        content: "{Chceš se naučit programovat? Tak tady jsi správně!};|";
+    }
+}
+
+#social-sidebar {
+    z-index: 1;
+    left: 0;
+    position: fixed;
+    top: 35%;
+    list-style-type: none;
+}
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+
+#social-sidebar a {
+    padding: 20%;
+    color: black;
+    background-color: rgba(0,0,0,0.8);
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+#social-sidebar a:hover span {
+    left: 120%;
+    opacity: 1;
+}
+#social-sidebar a span {
+    font: 12px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 24px;
+    left: -100%;
+    margin-top: -16px;
+    opacity: 0;
+    padding: 4px 8px;
+    position: absolute;
+    transition: opacity .3s, left .4s;
+    top: 50%;
+    z-index: -1;
+}
+
+#social-sidebar a span:before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    left: -4px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+#social-sidebar a[class*="twitter"]:hover,
+#social-sidebar a[class*="twitter"] span,
+#social-sidebar a[class*="twitter"] span:before {background: #fff;}
+
+#social-sidebar a[class*="facebook"]:hover,
+#social-sidebar a[class*="facebook"] span,
+#social-sidebar a[class*="facebook"] span:before {background: white;}
+
+#social-sidebar a[class*="gplus"]:hover,
+#social-sidebar a[class*="gplus"] span,
+#social-sidebar a[class*="gplus"] span:before {background: #fff;}
+
+#social-sidebar a[class*="dribbble"]:hover,
+#social-sidebar a[class*="dribbble"] span,
+#social-sidebar a[class*="dribbble"] span:before {background: #fff;}
+
+#social-sidebar a[class*="dropbox"]:hover,
+#social-sidebar a[class*="dropbox"] span,
+#social-sidebar a[class*="dropbox"] span:before {background: #fff;}
+
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {background: #fff;}
+
+#social-sidebar a[class*="evernote"]:hover,
+#social-sidebar a[class*="evernote"] span,
+#social-sidebar a[class*="evernote"] span:before {background: #fff;}
+
+.wrapper{
+    /* width:400px */
+    font-family: 'Roboto', sans-serif;
+    margin:0 auto;
+    width: 90%;
+    min-width: 200px;
+}
+.skill {
+    margin-bottom: 35px;
+    position: relative;
+    overflow-x:hidden;
+
+}
+.skill > p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    text-align: left;
+}
+.skill:before{
+    width: 100%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+}
+.skill-bar {
+    width: 100%;
+    height: 5px;
+    background:#f4392f;
+    display: block;
+    position: relative;
+}
+
+/* SKILL 1 */
+.skill1{
+    transition: 3s;
+    width: 95%;
+
+}
+.skill-bar span{
+    position: absolute;
+    border-top: 5px solid #f4392f;
+    top: -30px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+.skill-bar {
+    position: relative;
+
+}
+
+.skill1 .skill-count1 {
+    right: 0;
+}
+/* SKILL 2 */
+.skill2{
+    transition: 3s;
+    width: 85%;
+}
+
+.skill2 .skill-count2 {
+    right: 0;
+}
+/* SKILL 3 */
+.skill3{
+    transition: 3s;
+    width: 75%;
+}
+.skill3 .skill-count3 {
+    right: 0;
+}
+
+/* SKILL 4 */
+.skill4{
+    transition: 3s;
+    width: 65%
+}
+
+.skill4 .skill-count4 {
+    right: 0;
+}
+
+.skill11{
+    transition: 3s;
+    width: 70%;
+
+}
+.skill11 .skill-count11 {
+    right: 0;
+}
+/* SKILL 2 */
+.skill22{
+    transition: 3s;
+    width: 50%;
+}
+
+.skill22 .skill-count22 {
+    right: 0;
+}
+/* SKILL 3 */
+.skill33{
+    transition: 3s;
+    width: 60%;
+}
+.skill33 .skill-count33 {
+    right: 0;
+}
+
+/* SKILL 4 */
+.skill44{
+    transition: 3s;
+    width: 85%
+}
+
+.skill44 .skill-count44 {
+    right: 0;
+}
+
+#funfacts{
+    text-align: center;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #fff;
+    color: black;
+}
+
+#funfacts h1{
+    font-size: 5vh;
+}
+
+#funfacts p{
+    font-size: 2vh;
+}
+
+#learnwithus{
+    background-color: rgba(255,255,255,0.2);
+}
+#learnwithus h2{
+    margin-left: 5%;
+    text-align: left;
+    font-size: 20vh;
+}
+
+#learnwithus h1{
+    margin: -10% 0 0 0;
+    font-size: 10vh;
+}
+
+#learnwithus h3{
+    margin: 0;
+    font-size: 5vh;
+}
+
+#info1{
+    font-size: 2vh;
+    padding: 2% 20% 0 20%;
+    margin-bottom: 0;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.icon{
+    height: 96px;
+    width: 96px;
+    transition: 0.5s;
+}
+
+.links{
+    margin: 0% 0 5% 0;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.links p{
+    font-size: 2vh;
+}
+
+.icon:hover{
+    transition: 0.5s;
+    height: 110px;
+    width: 110px;
+}
+
+#works{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 5% 0;
+}
+
+#works div h2{
+    margin-top: 0;
+    margin-left: 10%;
+    font-size: 23vh;
+    text-align: left;
+    color: rgba(255,255,255,0.1);
+}
+
+.webwork{
+    margin: 2%;
+    width: 90%;
+    min-width: 400px;
+    /*width: 500px*/
+
+
+}
+
+#projects{
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#projectstext h3{
+    padding-right: 5%;
+    padding-top: 25%;
+    font-size: 3vh;
+}
+
+#works div h1{
+    text-align: left;
+    margin-left: 30%;
+    font-size: 12vh;
+    margin-top: -42%;
+}
+
+#projectsimg, #projectstext{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+#feedback{
+    background-color: white;
+    padding-bottom: 3%;
+
+}
+
+#feedback h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgba(0,0,0,0.1);
+}
+
+#feedback h1{
+    color: black;
+    margin-top: -5%;
+    font-size: 10vh;
+}
+#feedbackdiv{
+
+    margin-left: 8%;
+    margin-right: 8%;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.name{
+    font-size: 4vh;
+    padding-right: 30%;
+    color: rgba(0,0,0,0.4) ;
+
+}
+.text{
+    margin-bottom: 20%;
+}
+#contact{
+    margin-bottom: 20%;
+
+}
+#contact h2{
+    color: white;
+    margin-top: -17%;
+    margin-right: 32%;
+    font-size: 8vh;
+}
+#contact h1{
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: 0;
+    text-align: right;
+    color: rgba(255,255,255,0.1);
+    font-size: 20vh;
+}
+input,textarea{
+    font-size: 2vh;
+    color: white;
+    padding: 1%;
+    background-color: transparent;
+    border-style: none none solid none;
+    border-color: rgba(255,255,255,0.4);
+    margin-bottom: 5%;
+}
+label{
+    font-size: 3vh;
+    color: white;
+    text-align: left;
+}
+form{
+
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#contactform{
+    margin-top: 6%;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+form button{
+    margin: 3% 2% 1% 70%;
+    padding: 1% 2% 1% 2%;
+    border: 1px #87CEFA;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e,#ee7752);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+    transition: 0.5s
+}
+form button:hover{
+    padding: 1.3% 2.3% 1.3% 2.3%;
+    border: 1px #87CEFA;
+    border-radius: 10px;
+    text-align: center;
+    color: #87CEFA;
+    cursor: pointer;
+}
+#kecy{
+
+    border-style: none  none none solid;
+    border-color: rgba(255,255,255,0.4);
+}
+#kecy h2{
+    margin-top: 0%;
+    font-size: 7vh;
+}
+#kecy p{
+    margin-top: 4%;
+    margin-right:35%;
+    margin-left: 25%;
+}
+footer{
+    background-color: rgba(90,90,90,1);
+    padding-bottom: 3%;
+}
+footer h3{
+    margin: 0% 0% 0% 2%;
+}
+footer p{
+    font-size: 1vh;
+    margin: -0.2% 0% 0% 5%;
+}
+#footer{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+
