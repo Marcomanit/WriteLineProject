@@ -12,9 +12,11 @@ body{
 }
 
 
-html {
-    scroll-behavior: smooth;
+html, body {
+    scroll-behavior: smooth !important;
+
 }
+
 header{
     padding-bottom: 5%;
     color: white;
@@ -266,11 +268,9 @@ main section h2{
     71% {
         content: "{Chceš vytvořit web? Tak tady jsi|";
     }
-
     74% {
         content: "{Chceš vytvořit web? Tak tady jsi s|";
     }
-
     78% {
         content: "{Chceš vytvořit web? Tak tady jsi sp|";
     }
@@ -559,7 +559,7 @@ main section h2{
     background-color: rgba(255,255,255,0.2);
     padding: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .links p{
@@ -581,7 +581,7 @@ main section h2{
 #works div h2{
     margin-top: 0;
     margin-left: 10%;
-    font-size: 23vh;
+    font-size: 18vh;
     text-align: left;
     color: rgba(255,255,255,0.1);
 }
@@ -754,6 +754,10 @@ footer p{
     margin-left: 15%;
     margin-right: 15%;
 }
+#iconContactSection{
+    padding-bottom: 15%;
+}
+
 
 
 
