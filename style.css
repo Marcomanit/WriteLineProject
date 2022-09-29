@@ -298,6 +298,7 @@ main section h2{
 }
 
 #social-sidebar {
+    padding-left:0px;
     z-index: 1;
     left: 0;
     position: fixed;
@@ -306,9 +307,12 @@ main section h2{
 }
 #social-sidebar li:first-child a { border-top-right-radius: 5px; }
 #social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
-
+#social-sidebar li a img{
+    width: 75%;
+    height: 75%;
+}
 #social-sidebar a {
-    padding: 20%;
+    padding: 10%;
     color: black;
     background-color: rgba(0,0,0,0.8);
     text-decoration: none;
@@ -740,17 +744,19 @@ form button:hover{
 
 .favorite{
     background-color: rgba(49,49,49,1);
+    border-radius: 10px;
 }
 
 .normal{
-    background-color: rgba(255,255,255,0.4);;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 10px;
 }
 
 #kecy div{
     margin: 3% 5% 3% 5%;
-    border-radius: 5%;
     padding: 3%;
 }
+
 
 #kecy div img{
     width: 40%;
@@ -788,7 +794,17 @@ footer p{
     margin-right: 15%;
 }
 #iconContactSection{
-    padding-bottom: 15%;
+    
+    margin-top: 25%;
+    padding-bottom: 15%; 
+}
+#iconContactSection div{
+    margin: 2% 0% 2% 20%;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+#iconContactSection img{
+    width: 70%;
 }
 
 
