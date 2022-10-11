@@ -1,961 +1,1228 @@
-body {
-    font-family: "Century Gothic", "Arial";
-    color: white;
-    margin: 0;
-    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
-    width: 100%;
-    height: 100%;
-    min-width: 1000px;
-    min-height: 1000px;
-}
 
-
-html,
-body {
-    scroll-behavior: smooth !important;
-
-}
-
-header {
-    padding-bottom: 5%;
-    color: white;
-}
-
-nav {
-    text-align: right;
-}
-
-nav a {
-    font-size: 2vh;
-    text-decoration: none;
-    padding: 0% 3% 0% 0%;
-    color: white;
-}
-
-nav a:hover {
-    color: #87CEFA;
-}
-
-#logo h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 4vh;
-}
-
-#logo p {
-    font-size: 1.5vh;
-    margin: -1% 0% 0% 13%;
-}
-
-#header1 h1 {
-    font-size: 10vh;
-    color: white;
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-#header1 {
-    padding: 15% 0 15% 0;
-    text-align: center;
-    transition: 1s;
-}
-
-header button {
-    padding: 1% 2% 1% 2%;
-    border: 1px #87CEFA;
-    border-radius: 10px;
-    background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
-    text-align: center;
-    color: white;
-    font-size: 2vh;
-    transition: 0.5s
-}
-
-header button:hover {
-    padding: 1.3% 2.3% 1.3% 2.3%;
-    border: 1px #87CEFA;
-    border-radius: 10px;
-    text-align: center;
-    color: #87CEFA;
-    cursor: pointer;
-}
-
-#header2 {
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0;
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
-}
-
-#logo {
-    padding: 1% 2% 1% 10%;
-    margin: 0;
-}
-
-#logo a {
-    text-decoration: none;
-    color: white;
-}
-
-#header2 nav {
-    padding: 3% 2% 2% 2%;
-}
-
-main section {
-    z-index: 99;
-    text-align: center;
-}
-
-main section h2 {
-    margin: 0 5% 0 0;
-    padding: 3% 0% 2% 0%;
-    font-size: 25vh;
-    text-align: right;
-    color: rgba(255, 255, 255, 0.1);
-}
-
-#textonas {
-    margin: 3% 20% 0% 20%;
-    font-size: 2.2vh;
-    padding-bottom: 5%;
-}
-
-#aboutus h1 {
-    margin: -10% 0 0 0;
-    font-size: 10vh;
-}
-
-#martintext,
-#marcotext {
-    padding: 5%;
-    font-size: 2vh;
-}
-
-#my {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    margin: 0% 10% 0% 10%;
-}
-
-#my div img {
-    padding: 1% 3% 1% 3%;
-}
-
-#mydiv,
-#mydiv2 {
-    color: white;
-    border-radius: 30px;
-    margin: 2% 20% 2% 20%;
-    transition: 2s;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-#marco,
-#martin {
-    width: 50%;
-    margin-top: -15%;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 25% 75%;
+@media only screen and (min-width: 0px){
+    body {
+        font-family: "Century Gothic", "Arial";
+        color: white;
+        margin: 0;
+        background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+        width: 100%;
+        height: 100%;
+        min-width: 1000px;
+        min-height: 1000px;
     }
 
-    50% {
-        background-position: 75% 50%;
+    html,
+    body {
+        scroll-behavior: smooth !important;
+
     }
 
-    100% {
-        background-position: 25% 75%;
+    header {
+        padding-bottom: 5%;
+        color: white;
     }
-}
 
-@keyframes bigger {
-    0% {
+    nav {
+        text-align: right;
+    }
+
+    nav a {
+        font-size: 2vh;
+        text-decoration: none;
+        padding: 0% 3% 0% 0%;
+        color: white;
+    }
+
+    nav a:hover {
+        color: #87CEFA;
+    }
+
+    #logo h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 4vh;
+    }
+
+    #logo p {
+        font-size: 1.5vh;
+        margin: -1% 0% 0% 13%;
+    }
+
+    #header1 h1 {
+        font-size: 10vh;
+        color: white;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    #header1 {
+        padding: 15% 0 15% 0;
+        text-align: center;
+        transition: 1s;
+    }
+
+    header button {
         padding: 1% 2% 1% 2%;
+        border: 1px #87CEFA;
+        border-radius: 10px;
+        background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+        text-align: center;
+        color: white;
+        font-size: 2vh;
+        transition: 0.5s
+    }
+
+    header button:hover {
+        padding: 1.3% 2.3% 1.3% 2.3%;
+        border: 1px #87CEFA;
+        border-radius: 10px;
+        text-align: center;
+        color: #87CEFA;
+        cursor: pointer;
+    }
+
+    #header2 {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        position: fixed;
+        /* Set the navbar to fixed position */
+        top: 0;
+        /* Position the navbar at the top of the page */
+        width: 100%;
+        /* Full width */
+        background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+    }
+    #logopng{
+        margin-top: -4%;
+        width: 10%;
+    }
+
+    #logopngdiv{
+        position: fixed;
+        top: 5%;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+    }
+    #logo {
+        padding: 1% 2% 1% 10%;
+        margin: 0;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #header2 nav {
+        padding: 3% 2% 2% 2%;
+    }
+
+    main section {
+        z-index: 99;
+        text-align: center;
+    }
+
+    main section h2 {
+        margin: 0 5% 0 0;
+        padding: 3% 0% 2% 0%;
+        font-size: 25vh;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.1);
+    }
+
+    #textonas {
+        margin: 3% 20% 0% 20%;
+        font-size: 2.2vh;
+        padding-bottom: 5%;
+    }
+
+    #aboutus h1 {
+        margin: -10% 0 0 0;
+        font-size: 10vh;
+    }
+
+    #martintext,
+    #marcotext {
+        padding: 5%;
+        font-size: 2vh;
+    }
+
+    #my {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin: 0% 10% 0% 10%;
+    }
+
+    #my div img {
+        padding: 1% 3% 1% 3%;
+    }
+
+    #mydiv,
+    #mydiv2 {
+        color: white;
+        border-radius: 30px;
+        margin: 2% 20% 2% 20%;
+        transition: 2s;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #marco,
+    #martin {
+        width: 50%;
+        margin-top: -15%;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 25% 75%;
+        }
+
+        50% {
+            background-position: 75% 50%;
+        }
+
+        100% {
+            background-position: 25% 75%;
+        }
+    }
+
+    @keyframes bigger {
+        0% {
+            padding: 1% 2% 1% 2%;
         ;
-    }
+        }
 
-    100% {
-        padding: 2% 3% 2% 3%;
+        100% {
+            padding: 2% 3% 2% 3%;
         ;
-    }
-}
-
-.curvedbck {
-    z-index: 80;
-    display: block;
-    box-sizing: border-box;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    clip-path: ellipse(75% 100% at 62% 100%);
-}
-
-#nadpis::before {
-    content: "{Chceš vytvořit web? Tak tady jsi správně!};";
-    animation: animate 6s;
-    padding-left: 10px;
-}
-
-@keyframes animate {
-
-    0% {
-        content: "{C|";
+        }
     }
 
-    2% {
-        content: "{Ch|";
+    .curvedbck {
+        z-index: 80;
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        clip-path: ellipse(75% 100% at 62% 100%);
     }
 
-    4% {
-        content: "{Chc|";
+    #nadpis::before {
+        content: "{Chceš vytvořit web? Tak tady jsi správně!};";
+        animation: animate 6s;
+        padding-left: 10px;
     }
 
-    6% {
-        content: "{Chce|";
+    @keyframes animate {
+
+        0% {
+            content: "{C|";
+        }
+
+        2% {
+            content: "{Ch|";
+        }
+
+        4% {
+            content: "{Chc|";
+        }
+
+        6% {
+            content: "{Chce|";
+        }
+
+        8% {
+            content: "{Chceš|";
+        }
+
+        10% {
+            content: "{Chceš v|";
+        }
+
+        12% {
+            content: "{Chceš vy|";
+        }
+
+        14% {
+            content: "{Chceš vyt|";
+        }
+
+        16% {
+            content: "{Chceš vytv|";
+        }
+
+        18% {
+            content: "{Chceš vytvoř|";
+        }
+
+        20% {
+            content: "{Chceš vytvořit|";
+        }
+
+        22% {
+            content: "{Chceš vytvořit |";
+        }
+
+        24% {
+            content: "{Chceš vytvořit w|";
+        }
+
+        26% {
+            content: "{Chceš vytvořit we|";
+        }
+
+        30% {
+            content: "{Chceš vytvořit web|";
+        }
+
+        35% {
+            content: "{Chceš vytvořit web?|";
+        }
+
+        41% {
+            content: "{Chceš vytvořit web? T|";
+        }
+
+        45% {
+            content: "{Chceš vytvořit web? Tak|";
+        }
+
+        50% {
+            content: "{Chceš vytvořit web? Tak t|";
+        }
+
+        55% {
+            content: "{Chceš vytvořit web? Tak ta|";
+        }
+
+        58% {
+            content: "{Chceš vytvořit web? Tak tad|";
+        }
+
+        61% {
+            content: "{Chceš vytvořit web? Tak tady|";
+        }
+
+        64% {
+            content: "{Chceš vytvořit web? Tak tady j|";
+        }
+
+        68% {
+            content: "{Chceš vytvořit web? Tak tady js|";
+        }
+
+        71% {
+            content: "{Chceš vytvořit web? Tak tady jsi|";
+        }
+
+        74% {
+            content: "{Chceš vytvořit web? Tak tady jsi s|";
+        }
+
+        78% {
+            content: "{Chceš vytvořit web? Tak tady jsi sp|";
+        }
+
+        81% {
+            content: "{Chceš vytvořit web? Tak tady jsi spr|";
+        }
+
+        84% {
+            content: "{Chceš vytvořit web? Tak tady jsi sprá|";
+        }
+
+        88% {
+            content: "{Chceš vytvořit web? Tak tady jsi správ|";
+        }
+
+        91% {
+            content: "{Chceš vytvořit web? Tak tady jsi správn|";
+        }
+
+        94% {
+            content: "{Chceš vytvořit web? Tak tady jsi správně|";
+        }
+
+        97% {
+            content: "{Chceš vytvořit web? Tak tady jsi správně!|";
+        }
+
+        100% {
+            content: "{Chceš vytvořit web? Tak tady jsi správně!}";
+        }
     }
 
-    8% {
-        content: "{Chceš|";
+    #social-sidebar {
+        padding-left: 0px;
+        z-index: 1;
+        left: 0;
+        position: fixed;
+        top: 35%;
+        list-style-type: none;
     }
 
-    10% {
-        content: "{Chceš v|";
+    #social-sidebar li:first-child a {
+        border-top-right-radius: 5px;
     }
 
-    12% {
-        content: "{Chceš vy|";
+    #social-sidebar li:last-child a {
+        border-bottom-right-radius: 5px;
     }
 
-    14% {
-        content: "{Chceš vyt|";
+    #social-sidebar li a img {
+        width: 75%;
+        height: 75%;
     }
 
-    16% {
-        content: "{Chceš vytv|";
+    #social-sidebar a {
+        padding: 10%;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        width: 100%;
+        font-size: 24px;
+        line-height: 100%;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
     }
 
-    18% {
-        content: "{Chceš vytvoř|";
+    #social-sidebar a {
+        width: 100%;
+        height: 100%;
     }
 
-    20% {
-        content: "{Chceš vytvořit|";
+    #social-sidebar a:hover span {
+        left: 120%;
+        opacity: 1;
     }
 
-    22% {
-        content: "{Chceš vytvořit |";
+    #social-sidebar a span {
+        font: 12px "Open Sans", sans-serif;
+        text-transform: uppercase;
+        border-radius: 3px;
+        line-height: 24px;
+        left: -100%;
+        margin-top: -16px;
+        opacity: 0;
+        padding: 4px 8px;
+        position: absolute;
+        transition: opacity .3s, left .4s;
+        top: 50%;
+        z-index: -1;
     }
 
-    24% {
-        content: "{Chceš vytvořit w|";
+    #social-sidebar a span:before {
+        content: "";
+        display: block;
+        height: 8px;
+        width: 8px;
+        left: -4px;
+        margin-top: -4px;
+        position: absolute;
+        top: 50%;
+        transform: rotate(45deg);
     }
 
-    26% {
-        content: "{Chceš vytvořit we|";
+    #social-sidebar a[class*="twitter"]:hover,
+    #social-sidebar a[class*="twitter"] span,
+    #social-sidebar a[class*="twitter"] span:before {
+        background: #fff;
     }
 
-    30% {
-        content: "{Chceš vytvořit web|";
+    #social-sidebar a[class*="facebook"]:hover,
+    #social-sidebar a[class*="facebook"] span,
+    #social-sidebar a[class*="facebook"] span:before {
+        background: white;
     }
 
-    35% {
-        content: "{Chceš vytvořit web?|";
+    #social-sidebar a[class*="gplus"]:hover,
+    #social-sidebar a[class*="gplus"] span,
+    #social-sidebar a[class*="gplus"] span:before {
+        background: #fff;
     }
 
-    41% {
-        content: "{Chceš vytvořit web? T|";
+    #social-sidebar a[class*="dribbble"]:hover,
+    #social-sidebar a[class*="dribbble"] span,
+    #social-sidebar a[class*="dribbble"] span:before {
+        background: #fff;
     }
 
-    45% {
-        content: "{Chceš vytvořit web? Tak|";
+    #social-sidebar a[class*="dropbox"]:hover,
+    #social-sidebar a[class*="dropbox"] span,
+    #social-sidebar a[class*="dropbox"] span:before {
+        background: #fff;
     }
 
-    50% {
-        content: "{Chceš vytvořit web? Tak t|";
+    #social-sidebar a[class*="github"]:hover,
+    #social-sidebar a[class*="github"] span,
+    #social-sidebar a[class*="github"] span:before {
+        background: #fff;
     }
 
-    55% {
-        content: "{Chceš vytvořit web? Tak ta|";
+    #social-sidebar a[class*="evernote"]:hover,
+    #social-sidebar a[class*="evernote"] span,
+    #social-sidebar a[class*="evernote"] span:before {
+        background: #fff;
     }
 
-    58% {
-        content: "{Chceš vytvořit web? Tak tad|";
+    .wrapper {
+        /* width:400px */
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto;
+        width: 90%;
+        min-width: 200px;
     }
 
-    61% {
-        content: "{Chceš vytvořit web? Tak tady|";
+    .skill {
+        margin-bottom: 35px;
+        position: relative;
+        overflow-x: hidden;
+
     }
 
-    64% {
-        content: "{Chceš vytvořit web? Tak tady j|";
+    .skill>p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0;
+        text-align: left;
     }
 
-    68% {
-        content: "{Chceš vytvořit web? Tak tady js|";
+    .skill:before {
+        width: 100%;
+        height: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: #959595;
+        bottom: 0;
     }
 
-    71% {
-        content: "{Chceš vytvořit web? Tak tady jsi|";
+    .skill-bar {
+        width: 100%;
+        height: 5px;
+        background: #f4392f;
+        display: block;
+        position: relative;
     }
 
-    74% {
-        content: "{Chceš vytvořit web? Tak tady jsi s|";
+    /* SKILL 1 */
+    .skill1 {
+        transition: 3s;
+        width: 70%;
+
     }
 
-    78% {
-        content: "{Chceš vytvořit web? Tak tady jsi sp|";
+    .skill-bar span {
+        position: absolute;
+        border-top: 5px solid #f4392f;
+        top: -30px;
+        padding: 0;
+        font-size: 18px;
+        padding: 3px 0;
+        font-weight: 500;
     }
 
-    81% {
-        content: "{Chceš vytvořit web? Tak tady jsi spr|";
+    .skill-bar {
+        position: relative;
+
     }
 
-    84% {
-        content: "{Chceš vytvořit web? Tak tady jsi sprá|";
+    .skill1 .skill-count1 {
+        right: 0;
     }
 
-    88% {
-        content: "{Chceš vytvořit web? Tak tady jsi správ|";
+    /* SKILL 2 */
+    .skill2 {
+        transition: 3s;
+        width: 100%;
     }
 
-    91% {
-        content: "{Chceš vytvořit web? Tak tady jsi správn|";
+    .skill2 .skill-count2 {
+        right: 0;
     }
 
-    94% {
-        content: "{Chceš vytvořit web? Tak tady jsi správně|";
+    /* SKILL 3 */
+    .skill3 {
+        transition: 3s;
+        width: 75%;
     }
 
-    97% {
-        content: "{Chceš vytvořit web? Tak tady jsi správně!|";
+    .skill3 .skill-count3 {
+        right: 0;
     }
 
-    100% {
-        content: "{Chceš vytvořit web? Tak tady jsi správně!}";
+    /* SKILL 4 */
+    .skill4 {
+        transition: 3s;
+        width: 65%
+    }
+
+    .skill4 .skill-count4 {
+        right: 0;
+    }
+
+    .skill11 {
+        transition: 3s;
+        width: 70%;
+
+    }
+
+    .skill11 .skill-count11 {
+        right: 0;
+    }
+
+    /* SKILL 2 */
+    .skill22 {
+        transition: 3s;
+        width: 80%;
+    }
+
+    .skill22 .skill-count22 {
+        right: 0;
+    }
+
+    /* SKILL 3 */
+    .skill33 {
+        transition: 3s;
+        width: 60%;
+    }
+
+    .skill33 .skill-count33 {
+        right: 0;
+    }
+
+    /* SKILL 4 */
+    .skill44 {
+        transition: 3s;
+        width: 50%
+    }
+
+    .skill44 .skill-count44 {
+        right: 0;
+    }
+
+    #funfacts {
+        text-align: center;
+        display: grid;
+        margin: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #fff;
+        color: black;
+    }
+
+    #funfacts h1 {
+        font-size: 5vh;
+    }
+
+    #funfacts p {
+        font-size: 2vh;
+    }
+
+    #learnwithus {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #learnwithus h2 {
+        margin-left: 5%;
+        text-align: left;
+        font-size: 20vh;
+    }
+
+    #learnwithus h1 {
+        margin: -10% 0 0 0;
+        font-size: 10vh;
+    }
+
+    #learnwithus h3 {
+        margin: 0;
+        font-size: 5vh;
+    }
+
+    #info1 {
+        font-size: 2vh;
+        padding: 2% 20% 0 20%;
+        margin-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .icon {
+        height: 10vh;
+        width: 10vh;
+        transition: 0.5s;
+    }
+
+    .links {
+        margin: 0% 0 5% 0;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .links p {
+        font-size: 2vh;
+    }
+
+    #works {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 0 5% 0;
+    }
+
+    #works div h2 {
+        margin-left: 20%;
+        margin-top: 0;
+        font-size: 18vh;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.1);
+    }
+
+    .webwork {
+        margin: 2%;
+        width: 90%;
+        min-width: 400px;
+        /*width: 500px*/
+    }
+
+    #projects {
+        text-align: right;
+    }
+
+    #projectstext h3 {
+        padding-right: 5%;
+        padding-top: 25%;
+        font-size: 3vh;
+    }
+
+    #works div h1 {
+        text-align: center;
+        font-size: 12vh;
+        margin-top: -8%;
+    }
+
+    #projectsimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 5% 0 5%;
+    }
+
+
+    #feedback {
+        background-color: white;
+        padding-bottom: 3%;
+
+    }
+
+    #feedback h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.1);
+    }
+
+    #feedback h1 {
+        color: black;
+        margin-top: -5%;
+        font-size: 10vh;
+    }
+
+    #feedbackdiv {
+
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .name {
+        font-size: 4vh;
+        padding-right: 30%;
+        color: rgba(0, 0, 0, 0.4);
+
+    }
+
+    .text {
+        margin-bottom: 20%;
+    }
+
+    #contact {
+        margin-bottom: 2%;
+        text-align: center;
+
+    }
+
+    #contact h2 {
+        color: white;
+        margin-top: -17%;
+        margin-right: 32%;
+        font-size: 8vh;
+    }
+
+    #contact h1 {
+        margin-top: 5%;
+        padding: 0;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.1);
+        font-size: 20vh;
+    }
+
+    input,
+    textarea {
+        font-size: 2vh;
+        color: white;
+        padding: 1%;
+        background-color: transparent;
+        border-style: none none solid none;
+        border-color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 5%;
+    }
+
+    label {
+        font-size: 3vh;
+        color: white;
+        text-align: left;
+    }
+
+    form {
+
+        margin-top: 0%;
+        margin-left: 20%;
+        margin-right: 15%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #contactform {
+        margin-top: 6%;
+        grid-template-columns: 1fr 2fr;
+        display: grid;
+    }
+
+    form button {
+        margin: 3% 2% 1% 70%;
+        padding: 1% 2% 1% 2%;
+        border: 1px #87CEFA;
+        border-radius: 10px;
+        background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+        text-align: center;
+        color: white;
+        font-size: 2vh;
+        transition: 0.5s
+    }
+
+    form button:hover {
+        padding: 1.3% 2.3% 1.3% 2.3%;
+        border: 1px #87CEFA;
+        border-radius: 10px;
+        text-align: center;
+        color: #87CEFA;
+        cursor: pointer;
+    }
+
+    #kecygrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-right: 5%;
+        padding-left: 5%;
+        border-style: none none none solid;
+        border-color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+    }
+
+    #kecy h2 {
+        margin: 0%;
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    #kecy p {
+        font-size: 2vh;
+    }
+
+    .favorite {
+        background-color: rgba(49, 49, 49, 1);
+        border-radius: 10px;
+        transition: 0.5s
+    }
+
+    .favorite:hover {
+        transform: scale(1.10);
+        cursor: pointer;
+    }
+
+    .normal {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+        transition: 0.5s
+    }
+
+    .normal:hover {
+        transform: scale(1.10);
+
+    }
+
+    .box1 {
+        display: block;
+    }
+
+    .normal:hover .box1,
+    .favorite:hover .box1 {
+        display: none;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    .normal:hover .box2,
+    .favorite:hover .box2 {
+        display: block;
+    }
+
+    #kecy div {
+        margin: 3% 5% 3% 5%;
+        padding: 3%;
+    }
+
+
+    #kecy div img {
+        width: 40%;
+    }
+
+    #kecy div h3 {
+        font-size: 2vh;
+        background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+        padding: 3%;
+        border-radius: 10px;
+    }
+
+    #kecy h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 3vh;
+    }
+
+    footer {
+        background-color: rgba(90, 90, 90, 1);
+        padding-bottom: 3%;
+    }
+
+    footer h3 {
+        margin: 0% 0% 0% 2%;
+    }
+
+    footer p {
+        font-size: 1vh;
+        margin: -0.2% 0% 0% 5%;
+    }
+
+    #footer {
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #iconContactSection {
+        margin-top: 25%;
+        padding-bottom: 15%;
+    }
+
+    #iconContactSection div {
+        margin: 2% 0% 2% 20%;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+
+    #iconContactSection img {
+        width: 70%;
+    }
+
+    #email {
+        margin-top: 30%;
+        font-size: 2vh;
+    }
+
+    #tel {
+        margin-top: 20%;
+        font-size: 2vh;
+    }
+    #projectsimg img:hover{
+        opacity: 50%;
+    }
+
+    #projectsimg img{
+        width: 90%;
     }
 }
+@media only screen and (max-device-width: 1400px) {
+    #my {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin: 5% 2% 5% 2%;
+    }
+
+    #funfacts {
+        text-align: center;
+        display: grid;
+        margin: 0;
+        grid-template-columns: 1fr;
+        background-color: #fff;
+        color: black;
+    }
+
+    #aboutus h1 {
+        margin: 0 0 0 0;
+        padding: 5%;
+        font-size: 6vh;
+    }
+
+    .links {
+        margin: 0% 0 5% 0;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #projectsimg {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 5% 0 5%;
+        text-align: center;
+    }
+
+    #projectsimg img{
+        width: 95%;
+    }
+
+    #feedbackdiv {
+
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    #contactform {
+        margin-top: 6%;
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    #header1 h1 {
+        font-size: 6vh;
+        color: white;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    body {
+        font-family: "Century Gothic", "Arial";
+        color: white;
+        margin: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        min-width: 1000px;
+        min-height: 1000px;
+    }
+
+    main section h2 {
+        display: none;
+        margin: 0 5% 0 0;
+        padding: 3% 0% 2% 0%;
+        font-size: 10vh;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.1);
+    }
+
+    #learnwithus h2 {
+        margin: 2%;
+        display: none;
+        text-align: left;
+        font-size: 6vh;
+    }
+
+    #works div h2 {
+        display: none;
+    }
+
+    #works div h1 {
+        text-align: center;
+        font-size: 6vh;
+        margin-top: -8%;
+    }
+
+    #contact h1 {
+        display: none;
+    }
+
+    .curvedbck {
+        z-index: 80;
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        clip-path: ellipse(200% 100% at 50% 100%);
+    }
+
+    nav{
+        display: none;
+    }
+
+    #header1{
+        margin: 5% 0 5% 0;
+    }
+
+    #nadpis::before {
+        content: "{Chceš vytvořit web? Tak tady jsi správně!};";
+        animation: animate 0s;
+        padding-left: 10px;
+    }
+
+    .btn{
+        margin-top: 20%;
+        padding: 3%;
+    }
+
+    #social-sidebar{
+        display: none;
+    }
+
+    #my div img {
+        padding: 1% 3% 1% 3%;
+    }
+
+    #mydiv,
+    #mydiv2 {
+        color: white;
+        border-radius: 30px;
+        margin: 10% 5% 10% 5%;
+        transition: 2s;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #logopngdiv{
+        display: none;
+    }
+
+    #textonas{
+        padding: 3%;
+        margin: 0;
+    }
+
+    #learnwithus h1 {
+        margin: 0%;
+        padding: 2%;
+        font-size: 6vh;
+    }
+
+    .links div{
+        margin: 4% 0% 4% 0%;
+    }
+
+    #iconContactSection div {
+        margin: 2% 0% 2% 0%;
+        grid-template-columns: 1fr;
+        display: grid;
+        text-align: center;
+    }
+
+    #iconContactSection div img{
+        padding-left: 30%;
+        width: 40%;
+    }
+
+    #works div h1 {
+        text-align: center;
+        font-size: 6vh;
+        margin-top: 2%;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    #projectstext h3 {
+        padding-right: 5%;
+        padding-top: 25%;
+        font-size: 3vh;
+    }
+
+    #feedback h1 {
+        color: black;
+        margin-top: 2%;
+        font-size: 6vh;
+    }
+
+    #contact h2 {
+        text-align: center;
+        display: block;
+        color: white;
+        margin-top: 2%;
+        font-size: 6vh;
+        margin-right: 0%;
+    }
+
+    #email{
+        margin: 2% 0 15% 0;
+    }
+
+    #tel{
+        margin: 2%;
+    }
+
+    #iconContactSection {
+        margin-top: 0%;
+        padding-bottom: 15%;
+    }
+
+    #kecy h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 6vh;
+    }
+
+    #kecygrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 5%;
+        padding-left: 5%;
+        border-style: none none none none;
+        text-align: center;
+    }
+
+    #kecygrid h2{
+        font-size: 4vh;
+    }
 
-#social-sidebar {
-    padding-left: 0px;
-    z-index: 1;
-    left: 0;
-    position: fixed;
-    top: 35%;
-    list-style-type: none;
-}
-
-#social-sidebar li:first-child a {
-    border-top-right-radius: 5px;
-}
-
-#social-sidebar li:last-child a {
-    border-bottom-right-radius: 5px;
-}
-
-#social-sidebar li a img {
-    width: 75%;
-    height: 75%;
-}
-
-#social-sidebar a {
-    padding: 10%;
-    color: black;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-decoration: none;
-    display: block;
-    height: 100%;
-    width: 100%;
-    font-size: 24px;
-    line-height: 100%;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-}
-
-#social-sidebar a {
-    width: 100%;
-    height: 100%;
-}
-
-#social-sidebar a:hover span {
-    left: 120%;
-    opacity: 1;
-}
-
-#social-sidebar a span {
-    font: 12px "Open Sans", sans-serif;
-    text-transform: uppercase;
-    border-radius: 3px;
-    line-height: 24px;
-    left: -100%;
-    margin-top: -16px;
-    opacity: 0;
-    padding: 4px 8px;
-    position: absolute;
-    transition: opacity .3s, left .4s;
-    top: 50%;
-    z-index: -1;
-}
-
-#social-sidebar a span:before {
-    content: "";
-    display: block;
-    height: 8px;
-    width: 8px;
-    left: -4px;
-    margin-top: -4px;
-    position: absolute;
-    top: 50%;
-    transform: rotate(45deg);
-}
-
-#social-sidebar a[class*="twitter"]:hover,
-#social-sidebar a[class*="twitter"] span,
-#social-sidebar a[class*="twitter"] span:before {
-    background: #fff;
-}
-
-#social-sidebar a[class*="facebook"]:hover,
-#social-sidebar a[class*="facebook"] span,
-#social-sidebar a[class*="facebook"] span:before {
-    background: white;
-}
-
-#social-sidebar a[class*="gplus"]:hover,
-#social-sidebar a[class*="gplus"] span,
-#social-sidebar a[class*="gplus"] span:before {
-    background: #fff;
-}
-
-#social-sidebar a[class*="dribbble"]:hover,
-#social-sidebar a[class*="dribbble"] span,
-#social-sidebar a[class*="dribbble"] span:before {
-    background: #fff;
-}
-
-#social-sidebar a[class*="dropbox"]:hover,
-#social-sidebar a[class*="dropbox"] span,
-#social-sidebar a[class*="dropbox"] span:before {
-    background: #fff;
-}
-
-#social-sidebar a[class*="github"]:hover,
-#social-sidebar a[class*="github"] span,
-#social-sidebar a[class*="github"] span:before {
-    background: #fff;
-}
-
-#social-sidebar a[class*="evernote"]:hover,
-#social-sidebar a[class*="evernote"] span,
-#social-sidebar a[class*="evernote"] span:before {
-    background: #fff;
-}
-
-.wrapper {
-    /* width:400px */
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    width: 90%;
-    min-width: 200px;
-}
-
-.skill {
-    margin-bottom: 35px;
-    position: relative;
-    overflow-x: hidden;
-
-}
-
-.skill>p {
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-    text-align: left;
-}
-
-.skill:before {
-    width: 100%;
-    height: 5px;
-    content: "";
-    display: block;
-    position: absolute;
-    background: #959595;
-    bottom: 0;
-}
-
-.skill-bar {
-    width: 100%;
-    height: 5px;
-    background: #f4392f;
-    display: block;
-    position: relative;
-}
-
-/* SKILL 1 */
-.skill1 {
-    transition: 3s;
-    width: 70%;
-
-}
-
-.skill-bar span {
-    position: absolute;
-    border-top: 5px solid #f4392f;
-    top: -30px;
-    padding: 0;
-    font-size: 18px;
-    padding: 3px 0;
-    font-weight: 500;
-}
-
-.skill-bar {
-    position: relative;
-
-}
-
-.skill1 .skill-count1 {
-    right: 0;
-}
-
-/* SKILL 2 */
-.skill2 {
-    transition: 3s;
-    width: 100%;
-}
-
-.skill2 .skill-count2 {
-    right: 0;
-}
-
-/* SKILL 3 */
-.skill3 {
-    transition: 3s;
-    width: 75%;
-}
-
-.skill3 .skill-count3 {
-    right: 0;
-}
-
-/* SKILL 4 */
-.skill4 {
-    transition: 3s;
-    width: 65%
-}
-
-.skill4 .skill-count4 {
-    right: 0;
-}
-
-.skill11 {
-    transition: 3s;
-    width: 70%;
-
-}
-
-.skill11 .skill-count11 {
-    right: 0;
-}
-
-/* SKILL 2 */
-.skill22 {
-    transition: 3s;
-    width: 80%;
-}
-
-.skill22 .skill-count22 {
-    right: 0;
-}
-
-/* SKILL 3 */
-.skill33 {
-    transition: 3s;
-    width: 60%;
-}
-
-.skill33 .skill-count33 {
-    right: 0;
-}
-
-/* SKILL 4 */
-.skill44 {
-    transition: 3s;
-    width: 50%
-}
-
-.skill44 .skill-count44 {
-    right: 0;
-}
-
-#funfacts {
-    text-align: center;
-    display: grid;
-    margin: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: #fff;
-    color: black;
-}
-
-#funfacts h1 {
-    font-size: 5vh;
-}
-
-#funfacts p {
-    font-size: 2vh;
-}
-
-#learnwithus {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-#learnwithus h2 {
-    margin-left: 5%;
-    text-align: left;
-    font-size: 20vh;
-}
-
-#learnwithus h1 {
-    margin: -10% 0 0 0;
-    font-size: 10vh;
-}
-
-#learnwithus h3 {
-    margin: 0;
-    font-size: 5vh;
-}
-
-#info1 {
-    font-size: 2vh;
-    padding: 2% 20% 0 20%;
-    margin-bottom: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.icon {
-    height: 10vh;
-    width: 10vh;
-    transition: 0.5s;
-}
-
-.links {
-    margin: 0% 0 5% 0;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.links p {
-    font-size: 2vh;
-}
-
-#works {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 0 5% 0;
-}
-
-#works div h2 {
-    margin-left: 20%;
-    margin-top: 0;
-    font-size: 18vh;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.1);
-}
-
-.webwork {
-    margin: 2%;
-    width: 90%;
-    min-width: 400px;
-    /*width: 500px*/
-}
-
-#projects {
-    text-align: right;
-}
-
-#projectstext h3 {
-    padding-right: 5%;
-    padding-top: 25%;
-    font-size: 3vh;
-}
-
-#works div h1 {
-    text-align: center;
-    font-size: 12vh;
-    margin-top: -8%;
-}
-
-#projectsimg {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 5% 0 5%;
-}
-
-
-#feedback {
-    background-color: white;
-    padding-bottom: 3%;
-
-}
-
-#feedback h2 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.1);
-}
-
-#feedback h1 {
-    color: black;
-    margin-top: -5%;
-    font-size: 10vh;
-}
-
-#feedbackdiv {
-
-    margin-left: 8%;
-    margin-right: 8%;
-    color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-}
-
-.name {
-    font-size: 4vh;
-    padding-right: 30%;
-    color: rgba(0, 0, 0, 0.4);
-
-}
-
-.text {
-    margin-bottom: 20%;
-}
-
-#contact {
-    margin-bottom: 2%;
-    text-align: center;
-
-}
-
-#contact h2 {
-    color: white;
-    margin-top: -17%;
-    margin-right: 32%;
-    font-size: 8vh;
-}
-
-#contact h1 {
-    margin-top: 5%;
-    padding: 0;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.1);
-    font-size: 20vh;
-}
-
-input,
-textarea {
-    font-size: 2vh;
-    color: white;
-    padding: 1%;
-    background-color: transparent;
-    border-style: none none solid none;
-    border-color: rgba(255, 255, 255, 0.4);
-    margin-bottom: 5%;
-}
-
-label {
-    font-size: 3vh;
-    color: white;
-    text-align: left;
-}
-
-form {
-
-    margin-top: 0%;
-    margin-left: 20%;
-    margin-right: 15%;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#contactform {
-    margin-top: 6%;
-    grid-template-columns: 1fr 2fr;
-    display: grid;
-}
-
-form button {
-    margin: 3% 2% 1% 70%;
-    padding: 1% 2% 1% 2%;
-    border: 1px #87CEFA;
-    border-radius: 10px;
-    background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
-    text-align: center;
-    color: white;
-    font-size: 2vh;
-    transition: 0.5s
-}
-
-form button:hover {
-    padding: 1.3% 2.3% 1.3% 2.3%;
-    border: 1px #87CEFA;
-    border-radius: 10px;
-    text-align: center;
-    color: #87CEFA;
-    cursor: pointer;
-}
-
-#kecygrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-right: 5%;
-    padding-left: 5%;
-    border-style: none none none solid;
-    border-color: rgba(255, 255, 255, 0.4);
-    text-align: center;
-}
-
-#kecy h2 {
-    margin: 0%;
-    font-size: 3vh;
-    text-align: center;
-}
-
-#kecy p {
-    font-size: 2vh;
-}
-
-.favorite {
-    background-color: rgba(49, 49, 49, 1);
-    border-radius: 10px;
-    transition: 0.5s
-}
-
-.favorite:hover {
-    transform: scale(1.10) perspective(1px);
-    cursor: pointer;
-}
-
-.normal {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
-    transition: 0.5s
-}
-
-.normal:hover {
-    transform: scale(1.10) perspective(1px);
-
-}
-
-.box1 {
-    display: block;
-}
-
-.normal:hover .box1,
-.favorite:hover .box1 {
-    display: none;
-}
-
-.box2 {
-    display: none;
-}
-
-.normal:hover .box2,
-.favorite:hover .box2 {
-    display: block;
-}
-
-#kecy div {
-    margin: 3% 5% 3% 5%;
-    padding: 3%;
-}
-
-
-#kecy div img {
-    width: 40%;
-}
-
-#kecy div h3 {
-    font-size: 2vh;
-    background: linear-gradient(-90deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
-    padding: 3%;
-    border-radius: 10px;
-}
-
-#kecy h4 {
-    margin: 0;
-    padding: 0;
-    font-size: 3vh;
-}
-
-footer {
-    background-color: rgba(90, 90, 90, 1);
-    padding-bottom: 3%;
-}
-
-footer h3 {
-    margin: 0% 0% 0% 2%;
-}
-
-footer p {
-    font-size: 1vh;
-    margin: -0.2% 0% 0% 5%;
-}
-
-#footer {
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-#iconContactSection {
-    margin-top: 25%;
-    padding-bottom: 15%;
-}
-
-#iconContactSection div {
-    margin: 2% 0% 2% 20%;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-}
-
-#iconContactSection img {
-    width: 70%;
-}
-
-#email {
-    margin-top: 30%;
-    font-size: 2vh;
-}
-
-#tel {
-    margin-top: 20%;
-    font-size: 2vh;
-}
-#projectsimg img:hover{
-    opacity: 50%;
+
+
 }
